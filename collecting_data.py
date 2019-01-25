@@ -174,13 +174,7 @@ else:
     print(sp500_prices.head())
     print(index_prices.head())
     print(company_values.head())
-
-# Only for programming
-sp500_prices = pd.read_csv('./Datafiles/close_price_sp500_2019-01-24.csv')
-ticker = 'AMZN'
-num_correlated = 10
-start_date = '2019-01-01'
-end_date = '2019-01-24'
+    
 
 ticker_series = sp500_prices[ticker]
 correlated_companies = np.abs(sp500_prices.drop('Date', axis=1).apply(lambda x: x.corr(ticker_series)))
