@@ -7,14 +7,14 @@ For instance, suppose it is dessired to get the top 10 correlated companies and 
 ```bash
 python3 collecting_data.py LEN 10 2018-07-01 2019-01-26
 ```
-where COTY corresponds to the company's ticker (should be the same to the label used in ), 10 represents the number of correlated companies (in absolute value) and '2018-07-01', '2019-01-26' is the required period. If the end date is not included, the current day is used.
+where COTY corresponds to the company's ticker (should be the same to the label used in the file SPY_All_Holdings.xls included in this repository), 10 represents the number of correlated companies (in absolute value) and '2018-07-01', '2019-01-26' is the required period. If the end date is not included, the current day is used.
 
 ## Expected output:
 During the running process, the following information for the S&P 500 downloading is shown:
 ![Image 1](https://github.com/henrychacon/StockTwits-and-yahoo-downloading-tool/blob/master/images/image1.jpg)
 
 After the adjusted prices and commodities values are downloaded, the Twits download process starts:
-IMAGEN 2
+![IMAGEN 2](https://github.com/henrychacon/StockTwits-and-yahoo-downloading-tool/blob/master/images/image2.jpg)
 
 Notice that there is a limitation in the number of Twits collected from [https://stocktwits.com/]. Therefore the process is stopped and resumed until the server allows it. After the process is finished, the following files are saved (where {ticker} corresponds to COTY, {start_date} and {end_date} to 2018-07-01 and 2019-01-26 in the above example):
 
