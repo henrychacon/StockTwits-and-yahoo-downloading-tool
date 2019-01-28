@@ -212,7 +212,7 @@ for cpny in correlated_companies.index:
     print('Getting twits for {}'.format(cpny))
     stocks_sentiment = getting_data_from_StokTwits(cpny, begin_date=start_date)
     stocks_sentiment.to_csv(file_name, index=False, header=False, mode='a')
-    stocks_sentiment_summary = pd.merge(stocks_sentiment_summary, sentiment_sumary(cpny, stocks_sentiment), on='Date')
+    stocks_sentiment_summary = pd.merge(stocks_sentiment_summary, sentiment_sumary(cpny, stocks_sentiment), on='Date', how='outer')
 
 file_name_summary = path + 'stocktwits_summary_' + ticker + '_' + start_date + '_to_' + end_date + '.csv'
 stocks_sentiment_summary.to_csv(file_name_summary)
