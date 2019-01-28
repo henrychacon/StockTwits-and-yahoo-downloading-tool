@@ -113,7 +113,6 @@ def getting_data_from_StokTwits(ticker, begin_date):
                 print('The process will resume at ' + str(dt.datetime.today() + dt.timedelta(seconds=delay)) + ', please wait...')
                 time.sleep(delay)
                 print('Process resumed...')
-                break
             else:
                 print('Response code by StockTwit: {}'.format(twits_req.status_code))
                 break
