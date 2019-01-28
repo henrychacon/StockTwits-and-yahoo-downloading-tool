@@ -11,7 +11,7 @@ where COTY corresponds to the company's ticker (should be the same to the label 
 
 ## Expected output:
 During the running process, the following information for the S&P 500 downloading is shown:
-IMAGEN 1
+![Image 1](https://github.com/henrychacon/StockTwits-and-yahoo-downloading-tool/blob/master/images/image1.jpg)
 
 After the adjusted prices and commodities values are downloaded, the Twits download process starts:
 IMAGEN 2
